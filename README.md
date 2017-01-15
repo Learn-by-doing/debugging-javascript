@@ -72,7 +72,7 @@ TypeError: Cannot read property 'toLowerCase' of undefined
     at /home/chill/Projects/current/Learn-by-doing/debugging-javascript/node_modules/express/lib/router/index.js:277:22
     at Function.process_params (/home/chill/Projects/current/Learn-by-doing/debugging-javascript/node_modules/express/lib/router/index.js:330:12)
 ```
-This shows a single error that happened in our node app. The most important part are the first two lines:
+This shows a single error that happened in our node app. The first two lines are the most important part:
 ```
 TypeError: Cannot read property 'toLowerCase' of undefined
     at /home/chill/Projects/current/Learn-by-doing/debugging-javascript/server.js:53:27
