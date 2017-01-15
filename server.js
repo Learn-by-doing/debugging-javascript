@@ -45,13 +45,20 @@ var getMatchingResources = function(q) {
 
 	var results = [];
 
+	// Loop over each resource.
 	resources.forEach(function(resource) {
 
+		// Get the name and description for this resource as lowercase.
+		// This allows case-insensitive searching.
 		var name = resource.name.toLowerCase();
 		var description = resource.description.toLowerCase();
+
+		// Can we find the search text (q) in either the name or description?
 		var isMatch = name.indexOf(q) !== -1 || description.indexOf(q) !== -1;
 
 		if (isMatch) {
+			// This resource matches our search query.
+			// Add it to the results array.
 			results.push(resource);
 		}
 	});
