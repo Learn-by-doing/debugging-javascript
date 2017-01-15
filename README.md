@@ -50,7 +50,7 @@ This will switch you over to the "broken" branch in your local git repository. T
 
 Stop the app by pressing `CTRL + C` in your terminal window. Start the app again with `npm start`.
 
-Try the demo again. You will find that it longer works. So let's start debugging.
+Try the demo again. You will find that it no longer works. So let's start debugging.
 
 Open your browser's developer tools (`F12` key in Google Chrome). Inside your developer tools, open the JavaScript console (`ESC` key in Google Chrome). Do you see any errors? You should see something like this:
 ```
@@ -77,3 +77,6 @@ This shows a single error that happened in our node app. The first two lines are
 TypeError: Cannot read property 'toLowerCase' of undefined
     at /home/chill/Projects/current/Learn-by-doing/debugging-javascript/server.js:53:27
 ```
+Note the `server.js:53:27`. This means that the error is located in [server.js at line 53](https://github.com/Learn-by-doing/debugging-javascript/blob/broken/server.js#L53).
+
+Try to fix the problem, then restart the app.
