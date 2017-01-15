@@ -15,11 +15,17 @@ Download the code for this project by using git clone:
 ```bash
 git clone https://github.com/Learn-by-doing/debugging-javascript.git
 ```
+This will create a new directory (folder) on your computer.
 
 
 ## Install Node Modules
 
-Like any node project, you will need to run download and install the required node modules for the project to run. Use the following command:
+Like any node project, you will need to download and install the required node modules for the project to run. This is done by running `npm install` in your terminal window while inside the project directory. Change into the project directory with the following command:
+```bash
+cd debugging-javascript
+```
+
+Now you can run the install:
 ```bash
 npm install
 ```
@@ -27,7 +33,7 @@ npm install
 
 ## Start the App
 
-Once that has finished, you can run the program like this:
+Once the install has finished, you can run the project like this:
 ```bash
 npm start
 ```
