@@ -9,7 +9,7 @@
 		<input type="submit" value="Search">
 	</form>
 
-	<pre id="results"></pre>
+	<pre id="result"></pre>
 
 	<script src="jquery.js"></script>
 
@@ -37,7 +37,7 @@
 					Use jQuery to excute an AJAX request. For more information:
 					https://api.jquery.com/jquery.get/
 				*/
-				$.get('/search'/* URI */, { q: q }/* parameters */).done(function(data) {
+				$.get('/search'/* URI */, { q: q }/* parameters */).done(function() {
 
 					// This code is run when the AJAX request has finished.
 

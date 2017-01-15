@@ -50,7 +50,7 @@ var getMatchingResources = function(q) {
 
 		// Get the name and description for this resource as lowercase.
 		// This allows case-insensitive searching.
-		var name = resource.name.toLowerCase();
+		var name = resource.naem.toLowerCase();
 		var description = resource.description.toLowerCase();
 
 		// Can we find the search text (q) in either the name or description?
